@@ -1,0 +1,4 @@
+<%= form_with model:user, method: :patch do |form| %>
+  <%= link_to "Delete",user_path(@user), data: {turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+  <%= form.button "Update" %>
+<% end %>
